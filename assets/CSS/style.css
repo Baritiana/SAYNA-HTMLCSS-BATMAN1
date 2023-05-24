@@ -117,23 +117,47 @@ nav ul a:hover{
     margin-top: 15px;
 }
 
-
-
-/* Designe de la section personnage*/
-
-.batman-personnage{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-
-}
-.nemesis-personnage{
+/*--Design de la section personnage*/
+.batman-personnage, .nemesis-personnage, .alliée-personnage{
     display: flex;
     justify-content: space-between;
     padding: 50px;
 }
-.alliée-personnage{
+
+#batman-cinema, #nemesis, #alliée, #justiceleague{
+    margin-top: 40px;
+}
+
+.titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+.personnage-info {
+    text-align: center;
+}
+
+/*--design de la partie multimedia*/
+
+#multimedia .slider-multumedia{
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    background-color: #393f43ee;
+
 }
