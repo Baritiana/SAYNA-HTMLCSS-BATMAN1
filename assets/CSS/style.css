@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root{
@@ -17,13 +18,13 @@
 }
 
 h1{
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani', sans empattement ;
     font-size: 36px;
     font-weight: 400;
 }
 
 button{
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani', sans empattement ;
     font-size: 20px;
     font-weight: 400;
 }
@@ -36,10 +37,10 @@ button{
 body{
     background-color: var(--black-color);
     color: white;
-    font-family: 'Space Grotesk';
+    font-family: 'Space Grotesk', sans empattement ;
     font-weight: 300;
 }
-/* Design de la navigation */
+/*Design de la navigation*/
 
 nav{
     display: flex;
@@ -56,14 +57,14 @@ nav ul a{
     color: var(--white-color);
     font-size: 30px;
     font-weight: 500;
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani', sans empattement ;
 }
 
 nav ul a:hover{
     color: var(--yellow-color);
 }
 
-/* Design de la partie HERO */
+/*Design de la partie HERO*/
 
 #hero {
     background-image: url(../Illustrations/Bathome1.png);
@@ -117,7 +118,7 @@ nav ul a:hover{
     margin-top: 15px;
 }
 
-/*--Design de la section personnage*/
+/*Design de la section personnage*/
 .batman-personnage, .nemesis-personnage, .alliée-personnage{
     display: flex;
     justify-content: space-between;
@@ -145,7 +146,7 @@ nav ul a:hover{
     text-align: center;
 }
 
-/*--design de la partie multimedia*/
+/*design de la partie multimedia*/
 
 #multimedia .slider-multumedia{
     display: flex;
@@ -158,6 +159,103 @@ nav ul a:hover{
 }
 
 #multimedia .slider-content{
+    padding: 15px;
     background-color: #393f43ee;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#multimedia p{
+    font-size: 11px;
+}
 
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right{
+    right: -85%;
+}
+
+#multimedia button.left{
+    left: 5%;
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+#multimedia .image-bande-annonce{
+    margin-left: 210px;
+
+}
+
+/*design de la partie formulaire*/
+
+#contact{
+    background-color: rgba(54, 51, 51, 0.693);
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type="email"], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(70, 67, 67);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .form .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+#contact .news {
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(70, 67, 67);
+}
+
+::placeholder{
+    color: rgb(65, 146, 129);
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type="radio"]{
+    opacity: 0;
+}
+
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(
+        69deg, rgb(152, 140, 140), rgb(82, 82, 144)
+    ) 1;
 }
