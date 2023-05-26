@@ -1,5 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family:'rajdhani';
+    src: url(../POLICE/Rajdhani-Medium.ttf);
+}
 
 :root{
     --yellow-color: #FFFF00;
@@ -18,9 +22,9 @@
 }
 
 h1{
-    font-family: 'Rajdhani', sans empattement ;
+    /*font-family: 'Rajdhani', sans empattement ;*/
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 400; 
 }
 
 button{
@@ -40,13 +44,22 @@ body{
     font-family: 'Space Grotesk', sans empattement ;
     font-weight: 300;
 }
+
+.up-bar{
+    border-top: #BCBBBD 2px solid;
+    position: relative;
+    top: 132px;
+    left: 102px;
+    width: 80%; 
+}
+
 /*Design de la navigation*/
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 ul{
@@ -56,7 +69,7 @@ ul{
 nav ul a{
     color: var(--white-color);
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Rajdhani', sans empattement ;
 }
 
@@ -64,15 +77,21 @@ nav ul a:hover{
     color: var(--yellow-color);
 }
 
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(6066%) hue-rotate(360deg) brightness(104%) contrast(101%);
+            filter: invert(4%) sepia(100%) saturate(6066%) hue-rotate(360deg) brightness(104%) contrast(101%);
+}
+
 /*Design de la partie HERO*/
 
 #hero {
     background-image: url(../Illustrations/Bathome1.png);
+    background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: red;
+    background-color:black;
     background-size: cover;
-    height: 800px;
+    height: 850px;
 }
 .content{
     display: flex;
@@ -81,28 +100,48 @@ nav ul a:hover{
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 380px;
 }
 #hero .titre {
-    margin: 20px 0;
+    margin: 40px;
+}
+
+#hero .texte{
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    font-size: 20px;
+    /*word-spacing: 3px;
+    letter-spacing: 1px;*/
 }
 
 .btn{
     text-decoration: none;
     color: var(--white-color);
-    font-size: 22px;
-    padding: 10px 20px;
-    margin-top: 20px;
+    font-size: 20px;
+    padding: 20px 30px;
+    margin: 20px;
+    margin-top: 10px;
     background: linear-gradient(
         80deg,var(--gradient-white),var(--gradient-red)
     );
-    box-shadow: var(--black-color) 15px 15px 40px; 
+    box-shadow: var(--black-color) 15px 15px 40px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
 }
 
+.btn:hover{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.cta{
+    margin-top: 40px;
+}
 #hero .fleche {
     display: block;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .scroll {
@@ -110,36 +149,40 @@ nav ul a:hover{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 80px;
-    top: 230px;
+    right: 50px;
+    top: 200px;
 }
 
+.scroll:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(6066%) hue-rotate(360deg) brightness(104%) contrast(101%);
+    filter: invert(4%) sepia(100%) saturate(6066%) hue-rotate(360deg) brightness(104%) contrast(101%);
+}
 .scroll .social {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 /*Design de la section personnage*/
 .batman-personnage, .nemesis-personnage, .alliée-personnage{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
 }
 
-#batman-cinema, #nemesis, #alliée, #justiceleague{
-    margin-top: 40px;
+#batman-cinema, #nemesis, #alliée, #justiceleague, #multimedia{
+    margin-top: 70px;
+
 }
 
 .titre{
-    text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
+    font-family: 'Rajdhani', sans empattement;
 }
 
 .description {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     text-align: justify;
     width: 80%;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .personnage-info {
@@ -160,7 +203,7 @@ nav ul a:hover{
 
 #multimedia .slider-content{
     padding: 15px;
-    background-color: #393f43ee;
+    background: linear-gradient(158deg, rgb(121, 117, 110) 0%, rgb(87, 90, 92) 60%);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -188,7 +231,7 @@ nav ul a:hover{
 }
 
 #multimedia .image-bande-annonce{
-    margin-left: 210px;
+    text-align: center;
 
 }
 
@@ -258,4 +301,60 @@ nav ul a:hover{
     border-image: linear-gradient(
         69deg, rgb(152, 140, 140), rgb(82, 82, 144)
     ) 1;
+    font-size: 15px;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    font-family: 'Rajdhani';
+    font-size: 15px;
+    color: white;
+}
+
+/*design citation*/
+
+#citations {
+    margin: 90px;
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citations .citation-auteur{
+    font-size: 15px;
+    padding-top: 30px;
+    font-family: 'rajdhani';
+}
+
+#citations .guillemet-close{
+    float: right;
+}
+
+/*design du footer*/
+footer{
+    margin-top: 162px;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item{
+    padding: 15px;  
 }
