@@ -22,20 +22,26 @@
 }
 
 h1{
-    /*font-family: 'Rajdhani', sans empattement ;*/
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
     font-size: 36px;
     font-weight: 400; 
 }
 
+h2{
+    font-family: url(../POLICE/SpaceGrotesk-Bold.ttf);
+    font-size: 12px;
+}
+
 button{
-    font-family: 'Rajdhani', sans empattement ;
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
     font-size: 20px;
     font-weight: 400;
 }
 
 .container{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    border: 3px solid var(--white-color) ;
 }
 
 body{
@@ -43,6 +49,10 @@ body{
     color: white;
     font-family: 'Space Grotesk', sans empattement ;
     font-weight: 300;
+    background-image: url(../Illustrations/Bathome12.png);
+    background-size: 34%;
+    background-repeat: no-repeat;
+    background-position: 1000px 3120px;
 }
 
 .up-bar{
@@ -59,7 +69,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 ul{
@@ -71,6 +81,7 @@ nav ul a{
     font-size: 30px;
     font-weight: 600;
     font-family: 'Rajdhani', sans empattement ;
+    margin-left: 3cm;
 }
 
 nav ul a:hover{
@@ -91,7 +102,7 @@ nav ul a:hover{
     background-repeat: no-repeat;
     background-color:black;
     background-size: cover;
-    height: 850px;
+    height: 1000px;
 }
 .content{
     display: flex;
@@ -149,7 +160,7 @@ nav ul a:hover{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 50px;
+    right: 60px;
     top: 200px;
 }
 
@@ -163,30 +174,46 @@ nav ul a:hover{
 
 /*Design de la section personnage*/
 .batman-personnage, .nemesis-personnage, .alliée-personnage{
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
+    width: 91%;
+    padding-left: 50px;
+    padding-bottom: 3cm;
 }
 
-#batman-cinema, #nemesis, #alliée, #justiceleague, #multimedia{
-    margin-top: 70px;
+#batman-cinema, #nemesis, #alliée, #justiceleague{
+   
 
 }
 
 .titre{
-    font-weight: bold;
-    margin: 30px 0;
-    font-family: 'Rajdhani', sans empattement;
+    margin: 60px 60px;
+    font-size: 36px;
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
 }
 
 .description {
     margin-bottom: 70px;
     text-align: justify;
+    letter-spacing: normal;
     width: 80%;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
+    padding-left: 50px;
 }
 
 .personnage-info {
     text-align: center;
+}
+
+#nemesis .titre{
+    background-image: url(../Illustrations/Bathome13.png) /*img class="iconnemesis" src="assets/Illustrations/Bathome13.png" alt=""*/;
+    background-size: 60%;
+    background-position: top right;
+    height: 4cm;
+    background-repeat: no-repeat;
+    width: 250px;
+    padding-top: 80px;
 }
 
 /*design de la partie multimedia*/
@@ -203,7 +230,7 @@ nav ul a:hover{
 
 #multimedia .slider-content{
     padding: 15px;
-    background: linear-gradient(158deg, rgb(121, 117, 110) 0%, rgb(87, 90, 92) 60%);
+    background: linear-gradient(158deg, rgb(144, 137, 125) 0%, rgb(87, 90, 92) 60%);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
