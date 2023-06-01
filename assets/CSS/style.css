@@ -39,9 +39,8 @@ button{
 }
 
 .container{
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
-    border: 3px solid var(--white-color) ;
 }
 
 body{
@@ -52,15 +51,34 @@ body{
     background-image: url(../Illustrations/Bathome12.png);
     background-size: 34%;
     background-repeat: no-repeat;
-    background-position: 1000px 3120px;
+    background-position: 1000px 3110px;
 }
 
 .up-bar{
-    border-top: #BCBBBD 2px solid;
+    border-top: 4px solid var(--white-color);
+    opacity: 50%;
     position: relative;
-    top: 132px;
-    left: 102px;
-    width: 80%; 
+    top: 180px;
+    left: 115px;
+    width: 85%; 
+}
+
+.left-bar{
+    height: 8000px;
+    position: absolute;
+    left: 85%;
+    border-left: 3px solid var(--white-color);
+    opacity: 20%;
+    margin-left: 114px;
+}
+
+.right-bar{
+    height: 8000px;
+    position: absolute;
+    right: 85%;
+    border-right: 3px solid var(--white-color);
+    opacity: 20%;
+    margin-right: 114px;
 }
 
 /*Design de la navigation*/
@@ -136,14 +154,16 @@ nav ul a:hover{
     background: linear-gradient(
         80deg,var(--gradient-white),var(--gradient-red)
     );
-    box-shadow: var(--black-color) 15px 15px 40px;
+    opacity: 40%;
+    /*box-shadow: var(--black-color) 15px 15px 40px;*/
     letter-spacing: 2px;
     word-spacing: 6px;
 }
-
+   
 .btn:hover{
     text-decoration:underline;
     font-weight: bold;
+    opacity: 100%;
 }
 
 .cta{
@@ -164,7 +184,7 @@ nav ul a:hover{
     top: 200px;
 }
 
-.scroll:hover{
+.social:hover{
     -webkit-filter: invert(4%) sepia(100%) saturate(6066%) hue-rotate(360deg) brightness(104%) contrast(101%);
     filter: invert(4%) sepia(100%) saturate(6066%) hue-rotate(360deg) brightness(104%) contrast(101%);
 }
@@ -181,9 +201,8 @@ nav ul a:hover{
     padding-bottom: 3cm;
 }
 
-#batman-cinema, #nemesis, #alliée, #justiceleague{
-   
-
+#justiceleague .image-justiceleague{
+   position: absolute;
 }
 
 .titre{
@@ -196,7 +215,7 @@ nav ul a:hover{
     margin-bottom: 70px;
     text-align: justify;
     letter-spacing: normal;
-    width: 80%;
+    width: 85%;
     font-size: 22px;
     font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
     padding-left: 50px;
@@ -207,7 +226,7 @@ nav ul a:hover{
 }
 
 #nemesis .titre{
-    background-image: url(../Illustrations/Bathome13.png) /*img class="iconnemesis" src="assets/Illustrations/Bathome13.png" alt=""*/;
+    background-image: url(../Illustrations/Bathome13.png);
     background-size: 60%;
     background-position: top right;
     height: 4cm;
@@ -340,7 +359,7 @@ input[type="submit"]{
     background: linear-gradient(
         80deg,var(--gradient-white),var(--gradient-red)
     );
-    font-family: 'Rajdhani';
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
     font-size: 15px;
     color: white;
 }
