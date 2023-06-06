@@ -22,12 +22,6 @@
     box-sizing: border-box;
 }
 
-h1{
-    font-family: url(../POLICE/Rajdhani-Medium.ttf);
-    font-size: 36px;
-    font-weight: 400; 
-}
-
 button{
     font-family: url(../POLICE/Rajdhani-Medium.ttf);
     font-size: 20px;
@@ -47,7 +41,13 @@ body{
     background-image: url(../Illustrations/Bathome12.png);
     background-size: 34%;
     background-repeat: no-repeat;
-    background-position: 1000px 3110px;
+    background-position: 1000px 3090px;
+}
+
+h1{
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
+    font-size: 36px;
+    font-weight: 400; 
 }
 
 .up-bar{
@@ -167,7 +167,7 @@ nav ul a:hover{
 #hero .fleche {
     display: block;
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 .scroll {
@@ -193,7 +193,12 @@ nav ul a:hover{
     justify-content: space-between;
     width: 91%;
     padding-left: 50px;
-    padding-bottom: 3cm;
+    padding-bottom: 2cm;
+}
+
+#justiceleague{
+    position: relative;
+
 }
 
 #justiceleague .image-justiceleague{
@@ -281,7 +286,7 @@ nav ul a:hover{
 }
 
 #multimedia{
-    padding-top: 15cm ;
+    padding-top: 18cm ;
 }
 
 /*design de la partie formulaire*/
@@ -367,7 +372,7 @@ input[type="submit"]{
     color: white;
 }
 .submenu{
-    /*display: none;*/
+    display: none;
     background-color: #424558;
 }
 
@@ -394,10 +399,16 @@ input[type="submit"]{
     margin: 0 auto;
 }
 
-#citations .citation-auteur{
-    font-size: 15px;
+#citations .citation-text{
+    font-size: 20px;
     padding-top: 30px;
-    font-family: 'rajdhani';
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
+}
+
+#citations .citation-auteur{
+    font-size: 12px;
+    padding-top: 30px;
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
 }
 
 #citations .guillemet-close{
@@ -408,12 +419,13 @@ input[type="submit"]{
 
 footer .text-footer{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
 }
 
 footer .social-footer{
     text-align: center;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 footer .social-item{
