@@ -13,6 +13,7 @@
     --gradient-white: #eddebf67;
     --gradient-red: #89000978;
     --black-color: #000;
+    --grey-color: #c4c4c4;
 }
 
 *{
@@ -25,11 +26,6 @@ h1{
     font-family: url(../POLICE/Rajdhani-Medium.ttf);
     font-size: 36px;
     font-weight: 400; 
-}
-
-h2{
-    font-family: url(../POLICE/SpaceGrotesk-Bold.ttf);
-    font-size: 12px;
 }
 
 button{
@@ -55,30 +51,30 @@ body{
 }
 
 .up-bar{
-    border-top: 4px solid var(--white-color);
+    border-top: 4px solid #BCBBBD;
     opacity: 50%;
     position: relative;
-    top: 180px;
-    left: 115px;
-    width: 85%; 
+    top: 132px;
+    left: 127px;
+    width: 83%;
 }
 
 .left-bar{
     height: 8000px;
     position: absolute;
     left: 85%;
-    border-left: 3px solid var(--white-color);
+    border-left: 3px solid #BCBBBD;
     opacity: 20%;
-    margin-left: 114px;
+    margin-left: 102px;
 }
 
 .right-bar{
     height: 8000px;
     position: absolute;
     right: 85%;
-    border-right: 3px solid var(--white-color);
+    border-right: 3px solid #BCBBBD;
     opacity: 20%;
-    margin-right: 114px;
+    margin-right: 102px;
 }
 
 /*Design de la navigation*/
@@ -87,7 +83,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 ul{
@@ -96,10 +92,9 @@ ul{
 
 nav ul a{
     color: var(--white-color);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     font-family: 'Rajdhani', sans empattement ;
-    margin-left: 3cm;
 }
 
 nav ul a:hover{
@@ -180,7 +175,7 @@ nav ul a:hover{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 60px;
+    right: 72px;
     top: 200px;
 }
 
@@ -195,7 +190,7 @@ nav ul a:hover{
 /*Design de la section personnage*/
 .batman-personnage, .nemesis-personnage, .alliée-personnage{
     display:flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 91%;
     padding-left: 50px;
     padding-bottom: 3cm;
@@ -204,7 +199,10 @@ nav ul a:hover{
 #justiceleague .image-justiceleague{
    position: absolute;
 }
-
+.zoom:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .titre{
     margin: 60px 60px;
     font-size: 36px;
@@ -223,6 +221,7 @@ nav ul a:hover{
 
 .personnage-info {
     text-align: center;
+    padding: 20px;
 }
 
 #nemesis .titre{
@@ -232,7 +231,7 @@ nav ul a:hover{
     height: 4cm;
     background-repeat: no-repeat;
     width: 250px;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 /*design de la partie multimedia*/
@@ -240,7 +239,7 @@ nav ul a:hover{
 #multimedia .slider-multumedia{
     display: flex;
     width: 60%;
-    margin: 40px auto;
+    margin: 10px auto;
 }
 
 #multimedia .slider-image{
@@ -278,7 +277,11 @@ nav ul a:hover{
 
 #multimedia .image-bande-annonce{
     text-align: center;
+    padding-bottom: 40px;
+}
 
+#multimedia{
+    padding-top: 15cm ;
 }
 
 /*design de la partie formulaire*/
@@ -363,7 +366,22 @@ input[type="submit"]{
     font-size: 15px;
     color: white;
 }
+.submenu{
+    /*display: none;*/
+    background-color: #424558;
+}
 
+.icon:hover  .submenu{
+    display: inline-block;
+    position: absolute;
+    top:100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    border-bottom:1px solid #BCBBBD;
+}
 /*design citation*/
 
 #citations {
@@ -387,9 +405,6 @@ input[type="submit"]{
 }
 
 /*design du footer*/
-footer{
-    margin-top: 162px;
-}
 
 footer .text-footer{
     text-align: center;
