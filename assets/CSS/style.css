@@ -243,12 +243,14 @@ nav ul a:hover{
 
 #multimedia .slider-multumedia{
     display: flex;
-    width: 60%;
-    margin: 10px auto;
+    margin-left: 10cm;
+    margin-bottom: 40px;
+   
+    border: 2px solid red;
 }
 
 #multimedia .slider-image{
-    width: 100%;
+    display: contents;
 }
 
 #multimedia .slider-content{
@@ -256,6 +258,7 @@ nav ul a:hover{
     background: linear-gradient(158deg, rgb(144, 137, 125) 0%, rgb(87, 90, 92) 60%);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    width: 45%;
 }
 #multimedia p{
     font-size: 11px;
@@ -294,22 +297,28 @@ nav ul a:hover{
 #contact{
     background-color: rgba(54, 51, 51, 0.693);
     padding: 70px 0;
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
+    font-size: 18px;
 }
 
 #contact .form{
     width: 50%;
     margin: 0 auto;
 }
-
+#contact .form .line{
+    line-height: 10px;
+}
 #contact h2{
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 32px;
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
+    font-size: 35px;
+    padding-bottom: 40px;
+
 }
 
 #contact .titre{
     display: block;
-    margin: 28px 0;
+    margin: 10px 0;
 }
 
 #contact .form input[type="email"], textarea{
@@ -317,20 +326,25 @@ nav ul a:hover{
     border-top: none;
     border-right: none;
     border-left: none;
-    width: 80%;
-    border-bottom: 2px solid rgb(70, 67, 67);
+    width: 100%;
+    border-bottom: 2px solid var(--grey-color);
     background-color: transparent;
     padding: 10px 0;
+    margin-bottom: 2cm;
 }
 
 #contact .form .icon img {
     transform: rotate(90deg);
     width: 20px;
+    float: right;
 }
 
-#contact .news {
-    margin: 15px 0;
-    border-bottom: 2px solid rgb(70, 67, 67);
+#contact .news, .choix {
+    margin: 20px 0;
+    border-bottom: 2px solid var(--grey-color);
+    width: 100%;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 ::placeholder{
@@ -342,6 +356,8 @@ nav ul a:hover{
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
+    
 }
 
 .form input[type="radio"]{
@@ -351,17 +367,18 @@ nav ul a:hover{
 .btn-group label{
     cursor: pointer;
     border: 2px solid;
-    padding: 10px;
+    padding: 5px;
     border-image: linear-gradient(
         69deg, rgb(152, 140, 140), rgb(82, 82, 144)
     ) 1;
-    font-size: 15px;
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
+    font-size: 18px;
 }
 
 input[type="submit"]{
     display: block;
     width: 230px;
-    margin: 25px auto;
+    margin: 70px auto;
     padding: 15px 0;
     cursor: pointer;
     background: linear-gradient(
@@ -371,6 +388,7 @@ input[type="submit"]{
     font-size: 15px;
     color: white;
 }
+
 .submenu{
     display: none;
     background-color: #424558;
