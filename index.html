@@ -202,7 +202,8 @@
                 </div> 
             </div>
             <div class="image-bande-annonce" >
-                <img src="assets/Illustrations/Bathome_ba2.png" alt="">
+                <a href="./assets/Multimedia/Batman Begins - Bande Annonce Officielle (VF) - Christian Bale _ Christopher Nolan _ Liam Neeson.mp4">
+                <img src="assets/Illustrations/Bathome_ba2.png" alt=""></a>
             </div>
         </section>
 
@@ -217,31 +218,38 @@
                     <label class="line" for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> aventures de 
                         Batman :</label>  <input type="checkbox">
                     <div  class="choix"  >
-                        <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-                        <span class="icon" ><a href="#submenu"><img src="assets/Logos/icon_flèche_2.png" alt=""></a>
-                            <ul class="submenu" >
-                                <li>Une fois par semaine</li>
-                                <li>Une fois tous les 2 semaines (2fois par mois)</li>
-                                <li>Une fois par mois</li>
-                                <li>Une fois tous les 3 mois</li>
-                                <li>Une fois tous les 6 mois</li>
-                            </ul>
-                        </span>
+                        <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>  
+                        <span class="icon"><a href="#submenu"><img src="assets/Logos/icon_flèche_2.png" alt=""></a>
+                                <ul class="submenu" >
+                                    <li>Une fois par semaine</li>
+                                    <li>Une fois tous les 2 semaines (2fois par mois)</li>
+                                    <li>Une fois par mois</li>
+                                    <li>Une fois tous les 3 mois</li>
+                                    <li>Une fois tous les 6 mois</li>
+                                </ul>
+                        </span>   
                     </div>
                     <div>
                         <p class="news" >Souhaitez-vous recevoir des news</p>
                     </div>
                 <div class="btn-group">
                     <input type="radio" id="film" >
-                    <label for="film">Des films</label>
+                    <label for="film" class="btn-group" >Des films</label>
                     <input type="radio" id="comics" >
-                    <label for="comics">Des comics</label>
+                    <label for="comics"class="btn-group" >Des comics</label>
                     <input type="radio" id="tout" >
-                    <label for="tout">De tous</label>
+                    <label for="tout"class="btn-group" >De tous</label>   
                 </div>
                     <p class="titre" >MESSAGE</p>
                     <textarea name="" id="" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                    <input type="submit" value="CONFIRMER">
+                <span class="pop"><a href="#pop">CONFIRMER</a></span><!--<input type="submit" value="CONFIRMER">-->
+                <div id="pop" class="modal" >
+                    <div class="modalcontent">
+                        <h4>MESSAGE RECU !</h4>
+                    <a href="#contact" class="modalclose" >&times;</a>
+                    </div>
+                </div>
+                       
                 </form>
             </div>
         </section>

@@ -190,6 +190,7 @@ nav ul a:hover{
 /*Design de la section personnage*/
 .batman-personnage, .nemesis-personnage, .alliée-personnage{
     display:flex;
+    
     justify-content: space-between;
     width: 91%;
     padding-left: 50px;
@@ -245,8 +246,6 @@ nav ul a:hover{
     display: flex;
     margin-left: 10cm;
     margin-bottom: 40px;
-   
-    border: 2px solid red;
 }
 
 #multimedia .slider-image{
@@ -260,8 +259,13 @@ nav ul a:hover{
     border-bottom-right-radius: 20px;
     width: 45%;
 }
+#multimedia .slider-content h1, h2{
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
+}
+
 #multimedia p{
-    font-size: 11px;
+    font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
+    font-size: 12px;
 }
 
 #multimedia button{
@@ -276,7 +280,7 @@ nav ul a:hover{
 }
 
 #multimedia button.left{
-    left: 5%;
+    left: 10%;
 }
 
 #multimedia .yellow{
@@ -304,6 +308,7 @@ nav ul a:hover{
 #contact .form{
     width: 50%;
     margin: 0 auto;
+    position: relative;
 }
 #contact .form .line{
     line-height: 10px;
@@ -335,7 +340,7 @@ nav ul a:hover{
 
 #contact .form .icon img {
     transform: rotate(90deg);
-    width: 20px;
+    width: 22px;
     float: right;
 }
 
@@ -357,7 +362,6 @@ nav ul a:hover{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
-    
 }
 
 .form input[type="radio"]{
@@ -371,11 +375,15 @@ nav ul a:hover{
     border-image: linear-gradient(
         69deg, rgb(152, 140, 140), rgb(82, 82, 144)
     ) 1;
+    opacity: 40%;
     font-family: url(../POLICE/SpaceGrotesk-Regular.ttf);
     font-size: 18px;
 }
+.btn-group:hover{
+    opacity: 100%;
+}
 
-input[type="submit"]{
+/*input[type="submit"]{
     display: block;
     width: 230px;
     margin: 70px auto;
@@ -387,8 +395,61 @@ input[type="submit"]{
     font-family: url(../POLICE/Rajdhani-Medium.ttf);
     font-size: 15px;
     color: white;
+}*/
+.pop a{
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    text-align: center;
+    margin: 70px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    font-family: url(../POLICE/Rajdhani-Medium.ttf);
+    font-size: 15px;
+    color: white;
 }
 
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 20cm;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent{
+    background-color: rgba(54, 63, 92, 0.945);
+    text-align: center;
+    padding: 70px;
+    width: 500px;
+    max-width: 80%;
+    border-radius: 4px;
+    position: relative;
+}
+.modalclose{
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--white-color);
+
+}
+
+#contact .choix{
+    position: relative;
+}
 .submenu{
     display: none;
     background-color: #424558;
@@ -397,13 +458,17 @@ input[type="submit"]{
 .icon:hover  .submenu{
     display: inline-block;
     position: absolute;
+    transition: all 0.3s ease;
     top:100%;
+    right: 0px;
     left: 0px;
     padding: 0px;
     z-index: 1000;
 }
 .submenu li{
     border-bottom:1px solid #BCBBBD;
+    padding: 10px;
+   
 }
 /*design citation*/
 
